@@ -124,7 +124,7 @@
     const BRANCHES = [
       { name: "الماظة",  lat: 30.083572234771616,  lng: 31.34435196729229, radius: 300 },
       { name: "المعادي", lat: 29.970680369158874,  lng: 31.27395256589353, radius: 300 },
-      { name: "اسيوط", lat: 27.178604,  lng: 31.186245, radius: 1000 }
+      { name: "اسيوط", lat: 27.178589760139342,  lng: 31.186244996021625, radius: 1000 }
     ];
     // radius = نصف القطر بالمتر (200 = 200 متر حواليك)
 
@@ -221,7 +221,7 @@
       const timeStr = pad(now.getHours())+':'+pad(now.getMinutes())+':'+pad(now.getSeconds());
       localStorage.setItem("last_att_code", code);
       setMsg("جاري الإرسال...", null);
-      fetch("https://n8n.srv1468690.hstgr.cloud/webhook/attendance", {
+      fetch("https://n8n.srv1468690.hstgr.cloud/webhook-test/a8b3ae00-9402-49b1-89e9-421155565097", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
