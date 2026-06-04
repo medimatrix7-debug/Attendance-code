@@ -221,7 +221,7 @@
       const timeStr = pad(now.getHours())+':'+pad(now.getMinutes())+':'+pad(now.getSeconds());
       localStorage.setItem("last_att_code", code);
       setMsg("جاري الإرسال...", null);
-      fetch("https://n8n.srv1468690.hstgr.cloud/webhook-test/a8b3ae00-9402-49b1-89e9-421155565097", {
+      fetch("https://n8n.srv1468690.hstgr.cloud/webhook/a8b3ae00-9402-49b1-89e9-421155565097", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
