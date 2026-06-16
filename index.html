@@ -126,7 +126,7 @@
 
     <div class="field notes-wrap">
       <label>ملاحظات <span style="color:#aaa;font-size:11px;">(اختياري)</span></label>
-      <textarea id="notes" rows="2" placeholder="مثال: تأخرت بسبب الزحمة..."></textarea>
+      <textarea id="notes" rows="2" placeholder=></textarea>
     </div>
 
     <button class="submit-btn" id="submit-btn" onclick="sendData()" disabled>تسجيل</button>
@@ -283,7 +283,7 @@
       localStorage.setItem("last_att_code", code);
       setMsg("جاري الإرسال...", null);
 
-      fetch("https://n8n.srv1468690.hstgr.cloud/webhook-test/45e1c41e-dfb1-42c5-95f3-399839a2a751", {
+      fetch("https://n8n.srv1468690.hstgr.cloud/webhook-test/a8b3ae00-9402-49b1-89e9-421155565097", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
